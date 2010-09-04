@@ -1,0 +1,20 @@
+<script>
+  function changeLocale(locale) {
+       alert('inside javascript')
+        if(locale == 1) {
+            window.location="/?locale=en";
+        } else if(locale == 2) {
+            window.location="/?locale=zh-CH";
+        }
+         
+
+    }
+</script>
+<h1>Locale Example</h1>
+<div>Choose the language: <select class="slectbox" name="localechange" onchange="changeLocale(this.value)">
+<option value="" >Select language</option>
+<option value="1">English (US)</option>
+<option value="2">Chinese</option>
+
+</select></div>
+<%=t :home%>
